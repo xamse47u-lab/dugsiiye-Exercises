@@ -1,20 +1,10 @@
-// comparission operators
+let isWeekend = true;
+let isSunny = true;
 
-let a = 15;
-let b = "15";
+console.log(isWeekend && isSunny)
 
-// equal and not equal
-console.log(a == b);
-console.log(a != b);
+console.log(isWeekend || isSunny)
 
-console.log(a === b);
 
-console.log(a !== b);
-
- //greater than and less than
-console.log(a > b);
-console.log(a < b);
-
-console.log(a >= b);
-
-console.log(a <= b);
+console.log(!isSunny)
+console.log(!isWeekend)
