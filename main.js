@@ -1,10 +1,15 @@
-let isWeekend = true;
-let isSunny = true;
+function row (a,b){
+    return a + b
+}
 
-console.log(isWeekend && isSunny)
+let result = row(20,300)
 
-console.log(isWeekend || isSunny)
+console.log(result/23);
+ 
+const x = function add(a,b){
+    return a + b
+}
 
+let isudar = x(20,300)
 
-console.log(!isSunny)
-console.log(!isWeekend)
+console.log(isudar);
