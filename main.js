@@ -1,7 +1,6 @@
+let colors = ["blue","Green","yellow"]
+console.log(colors);
+console.log(colors[0]);
+console.log(colors[1]);
+console.log(colors[2]);
 
-const taar = (a, b)=>{
-      return a + b
-}
-
-let bacal = taar(70,12);
-console.log(bacal);
