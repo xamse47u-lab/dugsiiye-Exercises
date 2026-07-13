@@ -1,15 +1,18 @@
-let car = {
-  made: 200,
-  model: "toyota",
-  year: 2026,
-  start: function () {
-    console.log("The car has started " + this.model);
+let library = [
+  {
+    title: "Atomic habits",
+    author: "James Clear",
+    year: 1984,
   },
-};
 
-console.log(car);
-car.start();
+  {
+    title: "Mircle morning",
+    author: "Hamse",
+    year: 2026
+  }
+];
 
-console.log(car.made);
-console.log(car.model);
-console.log(car.year);
+console.log(library);
+console.log(library[0].title);
+console.log(library[1].author);
+
