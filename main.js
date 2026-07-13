@@ -1,22 +1,13 @@
-let colors = ["blue", "Green", "yellow"];
+let car = {
+    made : 200,
+    model : "toyota",
+    year : 2026
+}
 
-console.log("before");
-console.log(colors);
+console.log(car);
 
-colors.push("red");
-console.log("after push");
-console.log(colors);
 
-colors.pop();
-console.log("after pop");
-console.log(colors);
 
-colors.unshift("joseph");
-console.log("after unshift");
-console.log(colors);
-
-colors.shift();
-console.log("after shift");
-console.log(colors);
-
-console.log(colors.length);
+console.log(car.made);
+console.log(car.model);
+console.log(car.year);
