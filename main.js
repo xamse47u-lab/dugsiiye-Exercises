@@ -1,12 +1,11 @@
-let colors = ["blue","Green","yellow"]
+let colors = ["blue", "Green", "yellow"];
 
 console.log("before");
 console.log(colors);
 
-colors.push("red")
+colors.push("red");
 console.log("after push");
 console.log(colors);
-
 
 colors.pop();
 console.log("after pop");
@@ -16,11 +15,8 @@ colors.unshift("joseph");
 console.log("after unshift");
 console.log(colors);
 
-
-colors.shift(); 
+colors.shift();
 console.log("after shift");
 console.log(colors);
 
 console.log(colors.length);
-
-
