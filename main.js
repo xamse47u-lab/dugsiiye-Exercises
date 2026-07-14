@@ -1,6 +1,6 @@
-const t = ["Apple", "banana", "cherrt", "tacko"];
-t.push("liibaan");
+let cost = 5;
 
-for (let i = 0; i < t.length; i++) {
-  console.log(t[i]);
+while (cost > 0) {
+  console.log("the cost of this is: " + cost);
+  cost--;
 }
