@@ -1,6 +1,6 @@
-let cost = 5;
+let password;
+do {
+  password = prompt("lambar 10 ka wayn");
+} while (password !== "12345");
 
-while (cost > 0) {
-  console.log("the cost of this is: " + cost);
-  cost--;
-}
+console.log("the password is done");
