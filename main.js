@@ -1,6 +1,26 @@
-let password;
-do {
-  password = prompt("lambar 10 ka wayn");
-} while (password !== "12345");
+const people = [
+  {
+    Name: "ahmed",
+    Age: 23,
+    Id: 231,
+  },
+  {
+    Name: "yiius",
+    Age: 37,
+    Id: 221,
+  },
+  {
+    Name: "tear",
+    Age: 73,
+    Id: 423,
+  },
+];
+console.log("\inProperties and values an each person");
 
-console.log("the password is done");
+for (let person of people) {
+  for (let key in person) {
+    console.log(key + " :" + person[key]);
+  }
+
+  console.log("---------");
+}
