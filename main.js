@@ -1,6 +1,6 @@
-const y = ["Apple", "banana", "cherry", "yacko"];
-y.push("liibaan");
+const t = ["Apple", "banana", "cherrt", "tacko"];
+t.push("liibaan");
 
-for (let i = 0; i < y.length; i++) {
-  console.log(y[i]);
+for (let i = 0; i < t.length; i++) {
+  console.log(t[i]);
 }
