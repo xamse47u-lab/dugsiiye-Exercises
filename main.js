@@ -44,17 +44,17 @@
 //   console.log("hot");
 // }
 
-
 // let grade = 100;
 
 // const message = grade >= 60 ? "passed": "Failed";
 
 // console.log(message);
 
+// const numbers = [1,2,3,4,5];
+// numbers.forEach((number) => {
+//     console.log("waa number :" + number);
 
-const numbers = [1,2,3,4,5];
-numbers.forEach((number) => {
-    console.log("waa number :" + number);
-    
-
-})
+// })
+let list = ["jerry", "ahmed", "Banana"];
+let listLength = list.map((list) => list.length);
+console.log(listLength);
