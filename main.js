@@ -45,9 +45,16 @@
 // }
 
 
-let grade = 100;
+// let grade = 100;
 
-const message = grade >= 60 ? "passed": "Failed";
+// const message = grade >= 60 ? "passed": "Failed";
 
-console.log(message);
+// console.log(message);
 
+
+const numbers = [1,2,3,4,5];
+numbers.forEach((number) => {
+    console.log("waa number :" + number);
+    
+
+})
