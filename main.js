@@ -55,6 +55,13 @@
 //     console.log("waa number :" + number);
 
 // })
-let list = ["jerry", "ahmed", "Banana"];
-let listLength = list.map((list) => list.length);
-console.log(listLength);
+// let list = ["jerry", "ahmed", "Banana"];
+// let listLength = list.map((list) => list.length);
+// console.log(listLength);
+
+let numbers = [1, 2, 4, 6, 7, 8];
+let multiplyNumbers = numbers.reduce(
+  (multiplyNumber, total) => multiplyNumber * total,
+  1,
+);
+console.log(multiplyNumbers);
