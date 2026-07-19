@@ -46,10 +46,12 @@ function fetchUserData() {
   });
 }
 
-fetchUserData()
-  .then((message) => {
-    console.log(message);
-  })
-  .catch((err) => {
+async function sooDaabac() {
+  try {
+    let user = await fetchUserData();
+    console.log(user);
+  } catch (err) {
     console.log(err);
-  });
+  }
+}
+sooDaabac();
