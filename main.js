@@ -33,25 +33,36 @@
 
 // nonBlocking();
 
-function fetchUserData() {
-  return new Promise((resolve, reject) => {
-    setTimeout(() => {
-      let speedTrue = true;
-      if (speedTrue) {
-        resolve("war waan fiicanahay seetahay adiga");
-      } else {
-        reject("war waan xanuunsanahay");
-      }
-    }, 2000);
-  });
-}
+// function fetchUserData() {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       let speedTrue = true;
+//       if (speedTrue) {
+//         resolve("war waan fiicanahay seetahay adiga");
+//       } else {
+//         reject("war waan xanuunsanahay");
+//       }
+//     }, 2000);
+//   });
+// }
 
-async function sooDaabac() {
-  try {
-    let user = await fetchUserData();
-    console.log(user);
-  } catch (err) {
-    console.log(err);
-  }
+// async function sooDaabac() {
+//   try {
+//     let user = await fetchUserData();
+//     console.log(user);
+//   } catch (err) {
+//     console.log(err);
+//   }
+// }
+// sooDaabac();
+
+async function fetchData() {
+  console.log("war data da waa la soo qaaday");
+
+  const response = await fetch("https://jsonplaceholder.typicode.com/photos");
+
+  const data = await response.json();
+
+  console.log("wara waa tan data da :", data);
 }
-sooDaabac();
+fetchData();
