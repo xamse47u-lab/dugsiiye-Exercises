@@ -1,6 +1,34 @@
-let car = { make: "toyota", model: "corolla", year: 2020 };
+// let cards = ["card1", "card2", "card 3"];
+// let cards2 = [...cards, "card3", "card4"];
+// console.log(cards2);
 
-let { model, make, year } = car;
+// //rest operator
 
-console.log(model);
-console.log(make);
+// function multiplyNumbers(...numbers) {
+//   return numbers.reduce((num, total) => num * total, 1);
+// }
+
+// console.log(multiplyNumbers(20, 54, 71, 2));
+// console.log(multiplyNumbers(71, 2));
+
+function sooCeli() {
+  alert("war ilaa aad i dhaafto ma tagaysid");
+
+  return { id: 12, name: "Eng Hamse" };
+}
+
+const user = sooCeli();
+
+console.log(user);
+
+console.log("waa i kan aniga waan soo dhaqsaday");
+
+function nonBlocking() {
+  setTimeout(() => {
+    console.log("waad soo daahday nio maxaa kaa qaldan");
+  }, 2000);
+}
+
+console.log("hada ayaan bilabmanaysaa hawsha");
+
+nonBlocking();
