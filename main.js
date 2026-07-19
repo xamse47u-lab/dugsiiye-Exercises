@@ -56,13 +56,31 @@
 // }
 // sooDaabac();
 
-async function fetchData() {
-  console.log("war data da waa la soo qaaday");
+// async function fetchData() {
+//   console.log("war data da waa la soo qaaday");
 
-  const response = await fetch("https://jsonplaceholder.typicode.com/photos");
+//   const response = await fetch("https://jsonplaceholder.typicode.com/photos");
 
-  const data = await response.json();
+//   const data = await response.json();
 
-  console.log("wara waa tan data da :", data);
+//   console.log("wara waa tan data da :", data);
+// }
+// fetchData();
+
+function operate(a, b, callback) {
+  return callback(a, b);
 }
-fetchData();
+
+function multiply(a, b) {
+  return a * b;
+}
+function division(a, b) {
+  return a / b;
+}
+function addition(a, b) {
+  return a + b;
+}
+
+console.log(operate(5, 7, multiply));
+console.log(operate(5, 7, addition));
+console.log(operate(5, 7, division));
