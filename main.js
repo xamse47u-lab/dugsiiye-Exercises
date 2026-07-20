@@ -67,20 +67,52 @@
 // }
 // fetchData();
 
-function operate(a, b, callback) {
-  return callback(a, b);
+// function operate(a, b, callback) {
+//   return callback(a, b);
+// }
+
+// function multiply(a, b) {
+//   return a * b;
+// }
+// function division(a, b) {
+//   return a / b;
+// }
+// function addition(a, b) {
+//   return a + b;
+// }
+
+// console.log(operate(5, 7, multiply));
+// console.log(operate(5, 7, addition));
+// console.log(operate(5, 7, division));
+async function postData() {
+  try {
+    const response = await fetch("https://jsonplaceholder.typicode.com/users", {
+      method: "POST",
+      headers: {
+        "Content-type": "application/json",
+      },
+      body: JSON.stringify({
+        name: "laaes ahmed",
+        username: "yaasir",
+        email: "hamse@gmail.com",
+        address: {
+          street: "line Dheere",
+          city: "bali",
+        },
+        phone: "2527093635",
+        website: "dugsiiye.com",
+      }),
+    });
+
+    if (!response.ok) {
+      throw new Error(`HTTP error : ${response.status}`);
+    }
+
+    const data = await response.json();
+    console.log(data);
+  } catch (error) {
+    console.log(error);
+  }
 }
 
-function multiply(a, b) {
-  return a * b;
-}
-function division(a, b) {
-  return a / b;
-}
-function addition(a, b) {
-  return a + b;
-}
-
-console.log(operate(5, 7, multiply));
-console.log(operate(5, 7, addition));
-console.log(operate(5, 7, division));
+postData();
