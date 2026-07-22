@@ -1,32 +1,17 @@
-// const heading = document.querySelector("#heading1");
-// console.log(heading);
+function changeImage() {
+  const changeImage = document.querySelector("#image");
 
-// const paragraph = document.querySelector("#para");
-// console.log(paragraph);
+  const url = prompt("Fadlan geli image URL:");
+  const borderColor = prompt("Fadlan geli border color:");
+  const width = prompt("Fadlan geli width (lambar kaliya):");
+  const height = prompt("Fadlan geli height (lambar kaliya):");
+  const borderRadius = prompt("Fadlan geli border radius (lambar kaliya):");
 
-// const buttons = document.querySelectorAll(".button");
-// console.log(buttons);
-
-// function ChangeContent() {
-//   paragraph.textContent = "Welcome my first DOM";
-//   //   console.log("welcome our website");
-// }
-// function ChangeText() {
-//   heading.innerHTML = "Hi welcome our website DOM document";
-// }
-const list = document.querySelector("#list");
-
-function addItem() {
-  const newItem = document.createElement("li");
-  newItem.textContent = "item 4";
-
-  list.appendChild(newItem);
-}
-
-function removeItem() {
-  if (list.lastChild) {
-    list.removeChild(list.lastChild);
-  } else {
-    alert("war waa lagu kala baxay");
-  }
+  changeImage.setAttribute("src", url);
+  changeImage.style.borderColor = borderColor;
+  changeImage.style.borderWidth = "px";
+  changeImage.style.borderStyle = "solid";
+  changeImage.style.width = width + "px";
+  changeImage.style.height = height + "px";
+  changeImage.style.borderRadius = borderRadius + "px";
 }
